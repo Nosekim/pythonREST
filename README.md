@@ -83,7 +83,7 @@ Response:
 }
 ```
 
-**DELETE**(method:POST): '/movies/<id>' (use the item id)
+**DELETE**(method:DEL): '/movies/<id>' (use the item id)
 
 ```json
 Body:
@@ -100,6 +100,17 @@ Response:
 }
 ```
 
+**UPDATE**(method:PUT): '/movies/<id>' (use the item id)
+
+```json
+Body: (make the changes)
+{
+    "name": "Film Name",
+    "casts": ["Christian Bale", "Aaron Eckhart"],
+    "genres": ["Action", "Crime", "Drama"],
+}
+```
+
 #### TODOS
-- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
-- [ ] this is an incomplete item
+- [ ] email confirmation
+- [ ] reset password
